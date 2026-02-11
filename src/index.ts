@@ -15,5 +15,6 @@ const main = async () => {
   });
   console.log("Yeah, you got the token!");
   console.log(token.access_token);
+  await rc.revoke(); // revoke the token since we don't really need it.
 };
 main();
